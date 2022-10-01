@@ -1,18 +1,5 @@
 \documentclass[journal]{IEEEtran}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-
-\usepackage{amsmath}
-\usepackage{lettrine}
-\usepackage{microtype}
-
-\usepackage{xcolor}
-\definecolor{liu}{rgb}{0,0.7,0.9}
-
-\usepackage[hidelinks]{hyperref}
-
-\newcommand{\link}[3][]{\href{#2}{$\text{#3#1}^{\color{liu}\omega}$}}
+\input{include/preamble}
 
 \title{Curriculum Vitae of Ivan Ukhov}
 \author{
@@ -32,6 +19,18 @@
 In this work, we study Ivan Ukhov's career, qualifications, and education and
 summarize them in a form suitable for consumption by potential employers.
 \end{abstract}
+
+\begin{IEEEkeywords}
+  Adaptive interpolation,
+  computer simulation,
+  electronic system,
+  probabilistic analysis,
+  sparse grid,
+  statistical dependence,
+  uncertainty quantification.
+\end{IEEEkeywords}
+
+\bstctlcite{IEEEexample:BSTcontrol}
 
 \section{Introduction}
 
@@ -102,9 +101,11 @@ Linköping University in machine learning, software engineering, and computer
 systems.
 
 2011--2017 --- Assisted in the following undergraduate courses at Linköping
-University: Design Patterns~$\omega$, Distributed Systems~$\omega$, Embedded
-Systems Design~$\omega$, Software Testing~$\omega$, and System Design and
-Methodologies~$\omega$.
+University: \link[,]{https://studieinfo.liu.se/kurs/tddb84/ht-2018}{Design
+Patterns} \link[,]{https://www.ida.liu.se/~TDDD25/}{Distributed Systems}
+\link[,]{https://www.ida.liu.se/~TDDI08/}{Embedded Systems Design}
+\link[,]{https://www.ida.liu.se/~TDDD04/}{Software Testing} and
+\link[.]{https://www.ida.liu.se/~TDTS07/}{System Design and Methodologies}
 
 \section{Learning Experience}
 2018--2019 --- Passed the following specializations on Coursera: Deep Learning,
@@ -139,19 +140,20 @@ Department of Information and Control Systems, Peter the Great Saint Petersburg
 Polytechnic University.
 
 \section{Selected Scientific Publications}
-\emph{2017 --- System-Level Analysis and Design under Uncertainty~$\omega$}
+\emph{2017 --- System-Level Analysis and Design under Uncertainty}
+\cite{ukhov2017d}
 
 Ph.D. thesis. Encompasses the individual research projects listed below.
 
 \emph{2017 --- Fine-Grained Long-Range Prediction of Resource Usage in Computer
-Clusters~$\omega$}
+Clusters} \cite{ukhov2017b}
 
 Technical report. Studied resource usage in a computer cluster~$\omega$.
 Constructed an efficient pipeline for data processing and devised a recurrent
 neural network for forecasting resource usage. Made extensive use of TensorFlow.
 
 \emph{2017 --- Fast Synthesis of Power and Temperature Profiles for the
-Development of Data-Driven Resource Managers~$\omega$}
+Development of Data-Driven Resource Managers} \cite{ukhov2017c}
 
 Technical report. Studied network traffic in a computer cluster~$\omega$.
 Developed an infrastructure for simulating systems processing user requests with
@@ -159,35 +161,35 @@ the goal of providing large amounts of synthetic but realistic data to
 facilitate the development of resource managers powered by machine learning.
 
 \emph{2017 --- Probabilistic Analysis of Electronic Systems via Adaptive
-Hierarchical Interpolation~$\omega$}
+Hierarchical Interpolation} \cite{ukhov2017a}
 
 Journal article. Developed an efficient framework for probabilistic analysis of
 electronic systems based on adaptive hierarchical interpolation on sparse grids.
 Leveraged advanced topics in numerical analysis.
 
 \emph{2015 --- Temperature-Centric Reliability Analysis and Optimization of
-Electronic Systems under Process Variation~$\omega$}
+Electronic Systems under Process Variation} \cite{ukhov2015}
 
 Journal article. Developed an efficient probabilistic framework for reliability
 analysis of electronic systems using polynomial regression and applied this
 framework in the context of energy optimization.
 
 \emph{2014 --- Probabilistic Analysis of Power and Temperature under Process
-Variation for Electronic-System Design~$\omega$}
+Variation for Electronic-System Design} \cite{ukhov2014b}
 
 Journal article. Developed an efficient probabilistic framework for temperature
 analysis of electronic systems based on polynomial regression. Made use of
 advanced topics in probability theory and numerical analysis.
 
 \emph{2014 --- Statistical Analysis of Process Variation Based on Indirect
-Measurements for Electronic-System Design~$\omega$}
+Measurements for Electronic-System Design} \cite{ukhov2014a}
 
 Conference paper. Developed an efficient statistical framework for
 characterizing variations in parameters of a technological process based on
 indirect measurements. Made extensive use of Bayesian inference.
 
 \emph{2012 --- Steady-State Dynamic Temperature Analysis and Reliability
-Optimization for Embedded Multiprocessor Systems~$\omega$}
+Optimization for Embedded Multiprocessor Systems} \cite{ukhov2012}
 
 Conference paper. Developed a fast and accurate technique for temperature
 analysis of multiprocessor systems and applied this technique in the context of
@@ -235,5 +237,10 @@ Reliable, responsible, organized, meticulous. Have high standards for the
 written word and the written code. Work well in a team. Work well individually.
 
 \section{Conclusion}
+
+\begingroup
+  \bibliographystyle{IEEEtran}
+  \bibliography{IEEEabrv,include/bibliography}
+\endgroup
 
 \end{document}

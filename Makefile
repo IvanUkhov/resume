@@ -1,4 +1,4 @@
 all:
-	latexmk -pvc -xelatex resume.tex
+	latexmk -pdf -pvc resume.tex
 
 .PHONY: all
