@@ -3,14 +3,25 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+\usepackage{amsmath}
 \usepackage{lettrine}
 \usepackage{microtype}
 
-\title{Résumé of Ivan Ukhov}
+\usepackage{xcolor}
+\definecolor{liu}{rgb}{0,0.7,0.9}
+
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\link}[3][]{\href{#2}{$\text{#3#1}^{\color{liu}\omega}$}}
+
+\title{Curriculum Vitae of Ivan Ukhov}
 \author{
   By Ivan Ukhov\\
-  E-mail: ivan.ukhov@gmail.com, blog: ivanukhov.com,\\
-  GitHub: IvanUkhov, LinkedIn: IvanUkhov, Twitter: IvanUkhov%
+  E-mail: \link[,]{mailto:ivan.ukhov@gmail.com}{ivan.ukhov@gmail.com}
+  blog: \link[,]{https://ivanukhov.com}{ivanukhov.com}\\
+  GitHub: \link[,]{https://github.com/IvanUkhov}{IvanUkhov}
+  LinkedIn: \link[,]{https://www.linkedin.com/in/IvanUkhov/}{IvanUkhov}
+  Twitter: \link{https://twitter.com/IvanUkhov}{IvanUkhov}
 }
 
 \begin{document}
@@ -18,8 +29,14 @@
 \maketitle
 
 \begin{abstract}
-She sells shells by the seashore.
+In this work, we study Ivan Ukhov's career, qualifications, and education and
+summarize them in a form suitable for consumption by potential employers.
 \end{abstract}
+
+\section{Introduction}
+
+\lettrine[findent=0.4em, nindent=0em]{\textbf{T}}{alent acquisition} becomes
+increasingly more difficult.
 
 \section{Professional Interests}
 Decision-making based on collected evidence combined with prior domain
@@ -216,5 +233,7 @@ design.
 
 Reliable, responsible, organized, meticulous. Have high standards for the
 written word and the written code. Work well in a team. Work well individually.
+
+\section{Conclusion}
 
 \end{document}
